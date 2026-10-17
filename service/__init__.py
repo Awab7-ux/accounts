@@ -6,6 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 app.config.from_object("service.config")
 
+# Security headers (Talisman) and CORS policies
 talisman = Talisman(app)
 CORS(app)
 
