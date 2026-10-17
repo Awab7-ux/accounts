@@ -1,0 +1,7 @@
+nohup: ignoring input
+12:48:47 system | web.1 started (pid=3161)
+12:48:47 web.1  | [2026-10-17 12:48:47 -0400] [3162] [INFO] Starting gunicorn 26.2.0
+12:48:47 web.1  | [2026-10-17 12:48:47 -0400] [3162] [INFO] Listening at: http://0.0.0.0:5000 (3162)
+12:48:47 web.1  | [2026-10-17 12:48:47 -0400] [3162] [INFO] Using worker: sync
+12:48:47 web.1  | [2026-10-17 12:48:47 -0400] [3165] [INFO] Booting worker with pid: 3165
+12:48:47 web.1  | [2026-10-17 12:48:47 -0400] [3162] [INFO] Control socket listening at /home/theia/.gunicorn/gunicorn.ctl
