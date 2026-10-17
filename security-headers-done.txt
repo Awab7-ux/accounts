@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/home/theia/.local/bin/nosetests", line 6, in <module>
+    sys.exit(run_exit())
+             ^^^^^^^^^^
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/core.py", line 118, in __init__
+    unittest.TestProgram.__init__(
+  File "/usr/lib/python3.11/unittest/main.py", line 101, in __init__
+    self.parseArgs(argv)
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/core.py", line 179, in parseArgs
+    self.createTests()
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/core.py", line 193, in createTests
+    self.test = self.testLoader.loadTestsFromNames(self.testNames)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/loader.py", line 481, in loadTestsFromNames
+    return unittest.TestLoader.loadTestsFromNames(self, names, module)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 232, in loadTestsFromNames
+    suites = [self.loadTestsFromName(name, module) for name in names]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 232, in <listcomp>
+    suites = [self.loadTestsFromName(name, module) for name in names]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/loader.py", line 454, in loadTestsFromName
+    return LazySuite(
+           ^^^^^^^^^^
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/suite.py", line 53, in __init__
+    super(LazySuite, self).__init__()
+  File "/usr/lib/python3.11/unittest/suite.py", line 22, in __init__
+    self._tests = []
+    ^^^^^^^^^^^
+  File "/home/theia/.local/lib/python3.11/site-packages/nose/suite.py", line 106, in _set_tests
+    if isinstance(tests, collections.Callable) and not is_suite:
+                         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'collections' has no attribute 'Callable'
